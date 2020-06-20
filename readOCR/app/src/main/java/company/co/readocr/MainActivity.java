@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.hardware.Camera;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -21,7 +22,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-
+@SuppressWarnings("deprecation")
 public class MainActivity extends AppCompatActivity{
     TessBaseAPI tessBaseAPI;//Tesseract 사용을 위한 관련 클래스 객체를 생성해줘야 한다.
     // TessBaseAPI 클래스 객체를 위한 참조변수를 정의하였다.
